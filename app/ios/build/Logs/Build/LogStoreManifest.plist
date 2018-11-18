@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>6CB30340-060B-4E30-925A-1CF458AD6514</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6CB30340-060B-4E30-925A-1CF458AD6514.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>FamilyMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FamilyMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>564240487.49347305</real>
+			<key>timeStoppedRecording</key>
+			<real>564240491.04314899</real>
+			<key>title</key>
+			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>6CB30340-060B-4E30-925A-1CF458AD6514</string>
+		</dict>
+		<key>721431A3-4EB3-40CC-8737-078AC32383C8</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>721431A3-4EB3-40CC-8737-078AC32383C8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>FamilyMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FamilyMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>563729022.45541096</real>
+			<key>timeStoppedRecording</key>
+			<real>563729024.363922</real>
+			<key>title</key>
+			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>721431A3-4EB3-40CC-8737-078AC32383C8</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
