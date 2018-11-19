@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>6CB30340-060B-4E30-925A-1CF458AD6514</key>
+		<key>6D4D5CC5-452C-416A-AF12-68F026823E46</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,9 +15,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6CB30340-060B-4E30-925A-1CF458AD6514.xcactivitylog</string>
+			<string>6D4D5CC5-452C-416A-AF12-68F026823E46.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>FamilyMenu project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>564240487.49347305</real>
+			<real>564298283.75135195</real>
 			<key>timeStoppedRecording</key>
-			<real>564240491.04314899</real>
+			<real>564298314.11250997</real>
 			<key>title</key>
 			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>6CB30340-060B-4E30-925A-1CF458AD6514</string>
+			<string>6D4D5CC5-452C-416A-AF12-68F026823E46</string>
 		</dict>
-		<key>721431A3-4EB3-40CC-8737-078AC32383C8</key>
+		<key>832539C6-3C70-4768-8C11-2D9B331DC9CC</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -44,9 +44,9 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>721431A3-4EB3-40CC-8737-078AC32383C8.xcactivitylog</string>
+			<string>832539C6-3C70-4768-8C11-2D9B331DC9CC.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>W</string>
+			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
 			<string>FamilyMenu project</string>
 			<key>schemeIdentifier-schemeName</key>
@@ -56,13 +56,13 @@
 			<key>signature</key>
 			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>563729022.45541096</real>
+			<real>564300653.53143406</real>
 			<key>timeStoppedRecording</key>
-			<real>563729024.363922</real>
+			<real>564300656.59402597</real>
 			<key>title</key>
 			<string>Building project FamilyMenu with scheme FamilyMenu and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>721431A3-4EB3-40CC-8737-078AC32383C8</string>
+			<string>832539C6-3C70-4768-8C11-2D9B331DC9CC</string>
 		</dict>
 	</dict>
 </dict>

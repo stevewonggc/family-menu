@@ -7,8 +7,11 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Button, CameraRoll, Platform, ScrollView, StyleSheet, Text, View, Image} from 'react-native';
 import MenuList from "./component/MenuList";
+import ImagePicker from "react-native-image-picker";
+import AddMenu from "./component/AddMenu";
+
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -17,12 +20,22 @@ const instructions = Platform.select({
         'Shake or press menu button for dev menu',
 });
 
+const options = {
+    title: 'Select Avatar',
+    customButtons: [{ name: 'fb', title: 'Choose Photo from Facebook' }],
+    storageOptions: {
+        skipBackup: true,
+        path: 'images',
+    },
+};
+
 type Props = {};
 export default class App extends Component<Props> {
+
     render() {
         return (
             <View style={styles.container}>
-                <MenuList/>
+                <AddMenu/>
             </View>
         );
     }

@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/steve/Projects/FamilyMenu/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.cpp \
-  /Users/steve/Projects/FamilyMenu/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Users/steve/Projects/FamilyMenu/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h
+  /Users/stevewang/Projects/family-menu/app/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.cpp \
+  /Users/stevewang/Projects/family-menu/app/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/stevewang/Projects/family-menu/app/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h

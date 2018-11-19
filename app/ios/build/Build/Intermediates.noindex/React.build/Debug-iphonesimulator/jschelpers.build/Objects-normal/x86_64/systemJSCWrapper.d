@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/steve/Projects/FamilyMenu/node_modules/react-native/ReactCommon/jschelpers/systemJSCWrapper.cpp \
-  /Users/steve/Projects/FamilyMenu/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h
+  /Users/stevewang/Projects/family-menu/app/node_modules/react-native/ReactCommon/jschelpers/systemJSCWrapper.cpp \
+  /Users/stevewang/Projects/family-menu/app/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h
