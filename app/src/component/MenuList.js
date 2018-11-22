@@ -33,7 +33,7 @@ class MenuList extends Component {
             return this.state.menuList.length === 0 ? (<Text>{"empty"}</Text>) :
                 <FlatList style={styles.list}
                           data={this.state.menuList}
-                          renderItem={({item}) => <MenuDetail menu={item}/>}
+                          renderItem={({item}) => <Menu menu={item}/>}
                 />;
         }
     }

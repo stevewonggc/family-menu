@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "storage",
+      "type": "com.eateverything.familymenu.controller.StorageProperties",
+      "sourceType": "com.eateverything.familymenu.controller.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "storage.location",
+      "type": "java.lang.String",
+      "description": "Folder location for storing files",
+      "sourceType": "com.eateverything.familymenu.controller.StorageProperties",
+      "defaultValue": "upload-dir"
+    }
+  ],
+  "hints": []
+}
