@@ -4,6 +4,8 @@ import {View, Image, Text, FlatList, StyleSheet} from "react-native";
 import api from "../api";
 import Menu from "./Menu";
 import MenuDetail from "./MenuDetail";
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+
 
 
 class MenuList extends Component {
@@ -11,6 +13,10 @@ class MenuList extends Component {
     state = {
         menuList: [],
         currentMenu: null
+    };
+
+    showMenuDetail = (menu) => {
+        this.props.navigation.navigate("MenuDetail", {menu: menu});
     };
 
     componentDidMount() {
@@ -28,21 +34,26 @@ class MenuList extends Component {
 
     render() {
         console.log(this.state.menuList);
-        if (this.state.currentMenu) {
-        } else {
-            return this.state.menuList.length === 0 ? (<Text>{"empty"}</Text>) :
-                <FlatList style={styles.list}
+        // if (this.state.currentMenu) {
+        //     return <MenuDetail menu={this.state.currentMenu}/>
+        // } else {
+            return this.state.menuList.length === 0 ? (<View style={styles.head}><Text style={styles.title}>{"还没有菜谱~~~~(>_<)~~~~"}</Text></View>) :
+                <FlatList 
                           data={this.state.menuList}
-                          renderItem={({item}) => <Menu menu={item}/>}
+                          renderItem={({item}) => <Menu menu={item} onPress={this.showMenuDetail}/>}
                 />;
-        }
+        // }
     }
-}
+};
 
 const styles = StyleSheet.create({
-    list: {
+    head: {
         flex: 1,
-        width: '100%',
+        justifyContent: 'center',
+    },
+    title: {
+        textAlign: 'center',
+        fontSize: 20
     }
 });
 

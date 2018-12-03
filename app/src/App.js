@@ -7,10 +7,11 @@
  */
 
 import React, {Component} from 'react';
-import {Button, CameraRoll, Platform, ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 import MenuList from "./component/MenuList";
-import ImagePicker from "react-native-image-picker";
+import { createBottomTabNavigator, createAppContainer, createStackNavigator} from "react-navigation";
 import AddMenu from "./component/AddMenu";
+import MenuDetail from "./component/MenuDetail"
 
 
 const instructions = Platform.select({
@@ -29,34 +30,27 @@ const options = {
     },
 };
 
-type Props = {};
-export default class App extends Component<Props> {
+
+const ListStackNavigator = createStackNavigator({
+    ListMenu: MenuList,
+    MenuDetail: MenuDetail,
+});
+
+const AddMenuStackNavigator = createStackNavigator({
+    AddMenu: AddMenu,
+});
+
+const TabNavigator = createBottomTabNavigator({
+    Home: ListStackNavigator,
+    AddMenu: AddMenuStackNavigator,
+});
+
+
+const AppContainer = createAppContainer(TabNavigator);
+
+export default class App extends Component {
 
     render() {
-        return (
-            <View style={styles.container}>
-                <MenuList/>
-            </View>
-        );
+        return <AppContainer />
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        paddingTop: 45,
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});

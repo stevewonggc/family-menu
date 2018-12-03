@@ -6,7 +6,9 @@ class Menu extends Component {
     render() {
         const {name, url, parts} = this.props.menu;
         return (
-            <TouchableOpacity style={styles.touchableContainer}>
+            <TouchableOpacity style={styles.touchableContainer} onPress={()=>{
+                this.props.onPress(this.props.menu)
+            }}>
                 <Image style={styles.image} source={{uri: url}}/>
                 <Text style={styles.title}>{name}</Text>
             </TouchableOpacity>
@@ -42,7 +44,8 @@ const styles = StyleSheet.create({
 });
 
 Menu.propTypes = {
-    menu: PropTypes.object.required
+    menu: PropTypes.object.required,
+    onPress: PropTypes.func.required,
 };
 
 export default Menu;
