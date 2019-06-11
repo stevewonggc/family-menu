@@ -1,0 +1,4 @@
+/* pages/menuList/menuList.wxss */
+#green {
+  background-color: green,
+}
