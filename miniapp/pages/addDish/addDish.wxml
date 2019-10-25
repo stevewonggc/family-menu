@@ -1,2 +1,43 @@
 <!--pages/addDish/addDish.wxml-->
-<text>pages/addDish/addDish.wxml</text>
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-uploader">
+          <view class="weui-uploader__bd">
+            <block wx:for="{{images}}" wx:key="*this">
+              <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+              </view>
+            </block>
+            <block wx:if="{{images.length===0}}">
+              <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__title">配料</view>
+    <view class="weui-cell weui-cells_after-title">
+      <!-- <view class="weui-cell__hd">
+        <view class="weui-label">配料</view>
+      </view> -->
+      <view class="weui_cell__bd">
+        <input class="weui-input" placeholder='请输入配料' bindinput='onInput'></input>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <view class="weui-label">厨师</view>
+      </view>
+      <view class="weui_cell__bd">
+        <picker bindchange="onCookChange" range="{{cook}}" value="{{cookIndex}}">
+          <view class='weui-input'>{{cook[cookIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <button class="weui-btn" type="primary" bindtap='onSave'>保存</button>
+  </view>
+</view>

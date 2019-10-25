@@ -18,18 +18,19 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
+@RequestMapping("/menu")
 public class MenuController {
 
   @Autowired private MenuDao menuDao;
 
   @Autowired private StorageService storageService;
 
-  @GetMapping("/menu")
+  @GetMapping
   public Page<Menu> getMenu(@PageableDefault() Pageable pageable) {
     return menuDao.findAll(pageable);
   }
 
-  @PutMapping("/menu")
+  @PutMapping
   public ResponseEntity<CommonResponse> createMenu(@RequestParam("name") String name, @RequestParam("parts") List<String> parts, @RequestParam("file") MultipartFile multipartFile) throws IOException {
     // Save the file
     String picName = storageService.store(multipartFile);

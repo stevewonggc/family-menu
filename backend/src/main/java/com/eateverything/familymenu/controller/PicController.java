@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Steve Wang.
  * @since 22 Nov, 2018 4:59 PM
  */
-@RestController
-@RequestMapping("pic")
+//@RestController
+//@RequestMapping("pic")
 public class PicController {
 
   @Autowired private StorageService storageService;

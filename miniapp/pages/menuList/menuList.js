@@ -28,6 +28,7 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    console.log("show");
     api.queryMenuList().then((res) => {
       console.log(res)
       this.setData({

@@ -1,11 +1,17 @@
 // pages/addDish/addDish.js
+
+const api = require('../../api/main')
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    images: [],
+    cook:['东东', '佳佳'],
+    cookIndex: 0,
+    partsString: ''
   },
 
   /**
@@ -62,5 +68,37 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onInput: function(e) {
+    this.setData({
+      partsString: e.detail.value
+    });
+  },
+
+  onCookChange: function(e) {
+    this.setData({
+      cookIndex: e.detail.value
+    })
+  },
+
+  onSave: function() {
+    console.log(this.data);
+    api.
+  },
+
+  chooseImage: function() {
+    var that = this;
+    console.log('tap choose image');
+    wx.chooseImage({
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'cameral'],
+      success: function(res) {
+        that.setData({
+          images: that.data.images.concat(res.tempFilePaths)
+        })
+        console.log(that.data);
+      },
+    })
   }
 })

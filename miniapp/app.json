@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/addDish/addDish",
     "pages/logs/logs",
-    "pages/menuList/menuList",
-    "pages/addDish/addDish"
+    "pages/menuList/menuList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,7 +18,12 @@
         "selectedIconPath": "images/menuList.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/addDish/addDish",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
         "iconPath": "images/add.png",
         "selectedIconPath": "images/add.png"
       }
